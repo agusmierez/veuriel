@@ -2687,7 +2687,7 @@ input, select, textarea {
 
 	}
 
-.logo img {
+#logo img {
   height: 60px;
   width: auto;
 }
