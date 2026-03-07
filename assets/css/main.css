@@ -133,6 +133,7 @@ input, select, textarea {
 	h1, h2, h3, h4, h5, h6 {
 		color: #444;
 		font-weight: 800;
+		font-family: 'Great Vibes', cursive;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -148,7 +149,7 @@ input, select, textarea {
 	}
 
 	h3 {
-		font-size: 1.35em;
+		font-size: 1.80em;
 		margin: 0 0 1em 0;
 	}
 
@@ -1634,7 +1635,7 @@ input, select, textarea {
 		-webkit-appearance: none;
 		position: relative;
 		display: inline-block;
-		background: #0090c5;
+		background: #ff6c54;
 		color: #fff;
 		text-decoration: none;
 		border-radius: 6px;
@@ -1661,7 +1662,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background: #10a0d5;
+			background: #ff8875;
 		}
 
 		input[type="button"]:active,
@@ -1794,7 +1795,7 @@ input, select, textarea {
 			}
 
 			.box.feature h2 {
-				font-size: 1.35em;
+				font-size: 2.35em;
 			}
 
 			.box.feature p {
@@ -2490,7 +2491,7 @@ input, select, textarea {
 			}
 
 			h2, h3, h4, h5, h6 {
-				font-size: 13pt;
+				/* font-size: 13pt; */
 				margin: 0 0 1em 0;
 			}
 
@@ -2690,4 +2691,6 @@ input, select, textarea {
 #logo img {
   height: 100px;
   width: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 2px rgba(46, 45, 45, 0.6);
 }
