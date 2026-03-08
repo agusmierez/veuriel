@@ -37,6 +37,15 @@ ol, ul {
 	list-style: none;
 }
 
+ul {
+	margin-top: 3rem;
+}
+
+/* li {
+	list-style: none;
+	padding-left: 0;
+} */
+
 blockquote, q {
 	quotes: none;
 }
@@ -2696,6 +2705,11 @@ input, select, textarea {
   box-shadow: 0 0 2px rgba(46, 45, 45, 0.6);
 }
 
+.button:hover {
+  transform: translateY(-2px);
+  transition: 0.2s ease;
+}
+
 #experiencias {
   padding: 4rem 0;
 }
@@ -2720,6 +2734,11 @@ input, select, textarea {
   text-align: center;
 }
 
+.experiencia:hover {
+  transform: translateY(-4px);
+  transition: 0.2s ease;
+}
+
 .experiencia img {
 	width: 70px;
   	height: 70px;
@@ -2741,6 +2760,40 @@ input, select, textarea {
   margin: 0;
 }
 
+.cta-experiencias {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.cta-experiencias .button {
+  display: inline-block;
+  /* font-size: 0.9em;
+  padding: 0.7em 1.5em; */
+}
+
+@media (max-width: 980px) and (min-width: 737px) {
+
+  .cta-experiencias {
+    padding: 0 2rem;
+  }
+
+  .cta-experiencias .button {
+    display: block;
+    width: 100%;
+  }
+
+}
+/* MOBILE */
+@media (max-width: 736px) {
+
+  .cta-experiencias .button {
+    display: block;
+    width: calc(100% - 2rem);
+    margin: 0 auto;
+  }
+
+}
+
 #footer {
   color: #e0e0e0;
 }
@@ -2751,6 +2804,7 @@ input, select, textarea {
 
 #footer a:hover {
   color: #f4d6e3;
+  opacity: 0.8;
 }
 
 #footer h1,
