@@ -2712,8 +2712,8 @@ input, select, textarea {
   max-width: 350px;
   background: white;
   padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
   margin-bottom: 0 !important;
   padding-bottom: 0;
   overflow: hidden;
@@ -2741,6 +2741,30 @@ input, select, textarea {
   margin: 0;
 }
 
+#footer {
+  color: #e0e0e0;
+}
+
+#footer a {
+  color: #e0e0e0;
+}
+
+#footer a:hover {
+  color: #f4d6e3;
+}
+
+#footer h1,
+#footer h2,
+#footer h3,
+#footer h4 {
+  color: #e4e4e4;
+}
+
+#footer p,
+#footer li {
+  color: #e0e0e0;
+}
+
 #footer-wrapper .wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -2749,7 +2773,7 @@ input, select, textarea {
 
 #footer-wrapper {
   background: #2a2a2a;
-  padding: 48px 0 0px 0;
+  padding: 3rem 0;
   margin-top: 0;
   border-top: none;
 }
@@ -2761,8 +2785,50 @@ input, select, textarea {
   background: transparent;
 }
 
+#copyright {
+  text-align: center;
+}
+
+#copyright .menu {
+  list-style: none;
+	padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+}
+
+#copyright .menu li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+#copyright .menu li + li:before {
+  content: "|";
+  margin: 0 10px;
+  color: #aaa;
+}
+
 @media (max-width: 768px) {
   #footer-wrapper {
     text-align: center;
   }
+}
+
+@media (max-width: 480px) {
+
+  #copyright .menu li {
+    display: block;
+  }
+
+  #copyright .menu li + li:before {
+    content: "";
+  }
+
+}
+
+@media (max-width: 736px) {
+
+  #experiencias h2 {
+    padding-left: 2rem;
+  }
+
 }
