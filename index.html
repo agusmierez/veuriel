@@ -69,7 +69,7 @@
 							</div>
 							<div class="col-5 col-12-medium">
 								<ul>
-									<li><a href="#" class="button large icon solid fa-arrow-circle-right">Reservá tu turno</a></li>
+									<li><a href="#" id="btnreserva-1" class="button large icon solid fa-arrow-circle-right">Reservá tu turno</a></li>
 									<li><a href="#" class="button alt large icon solid fa-question-circle">Más info</a></li>
 								</ul>
 							</div>
@@ -158,11 +158,20 @@
 								<!-- Content -->
 									<div id="content">
 										<section class="last">
-											<h2>Sobre Veuriel</h2>
-											<p><strong>Veuriel</strong>, a free and fully responsive HTML5 site template by <a href="http://html5up.net">HTML5 UP</a>.
-											Verti is released under the <a href="http://html5up.net/license">Creative Commons Attribution license</a>, so feel free to use it for any personal or commercial project you might have going on (just don't forget to credit us for the design!)</p>
-											<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus. Praesent semper bibendum ipsum, et tristique augue fringilla eu. Vivamus id risus vel dolor auctor euismod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat. Aliquam luctus mattis lectus sit amet phasellus quam turpis.</p>
-											<a href="#" class="button icon solid fa-arrow-circle-right">Seguir leyendo</a>
+
+											<div class="sobre-veuriel">
+											
+												<h2>Sobre Veuriel</h2>
+												<div class="foto-terapeuta">
+													<span class="image terapeuta">
+														<img src="images/terapeuta.jpg" alt="Terapeuta de Veuriel">
+													</span>
+												</div>
+												<p><strong>Veuriel</strong>, a free and fully responsive HTML5 site template by <a href="http://html5up.net">HTML5 UP</a>.
+												Verti is released under the <a href="http://html5up.net/license">Creative Commons Attribution license</a>, so feel free to use it for any personal or commercial project you might have going on (just don't forget to credit us for the design!)</p>
+												<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus. Praesent semper bibendum ipsum, et tristique augue fringilla eu. Vivamus id risus vel dolor auctor euismod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat. Aliquam luctus mattis lectus sit amet phasellus quam turpis.</p>
+												<a href="#" class="button icon solid fa-arrow-circle-right">Seguir leyendo</a>
+											</div>
 										</section>
 									</div>
 
@@ -212,13 +221,13 @@
 
 								<!-- Links -->
 									<section class="widget links">
-										<h3>Random Stuff</h3>
+										<h3>Navegación</h3>
 										<ul class="style2">
-											<li><a href="#">Etiam feugiat condimentum</a></li>
-											<li><a href="#">Aliquam imperdiet suscipit odio</a></li>
-											<li><a href="#">Sed porttitor cras in erat nec</a></li>
-											<li><a href="#">Felis varius pellentesque potenti</a></li>
-											<li><a href="#">Nullam scelerisque blandit leo</a></li>
+											<li><a href="#">Inicio</a></li>
+											<li><a href="#">Servicios</a></li>
+											<li><a href="#">Experiencias</a></li>
+											<li><a href="#">Preguntas frecuentes</a></li>
+											<!-- <li><a href="#">Nullam scelerisque blandit leo</a></li> -->
 										</ul>
 									</section>
 
@@ -227,13 +236,13 @@
 
 								<!-- Links -->
 									<section class="widget links">
-										<h3>Random Stuff</h3>
+										<h3>Reservas</h3>
 										<ul class="style2">
-											<li><a href="#">Etiam feugiat condimentum</a></li>
-											<li><a href="#">Aliquam imperdiet suscipit odio</a></li>
-											<li><a href="#">Sed porttitor cras in erat nec</a></li>
-											<li><a href="#">Felis varius pellentesque potenti</a></li>
-											<li><a href="#">Nullam scelerisque blandit leo</a></li>
+											<li><a href="#">Reservar turno</a></li>
+											<li><a href="#">Como reservar</a></li>
+											<li><a href="#">Duración de sesiones</a></li>
+											<!-- <li><a href="#">Felis varius pellentesque potenti</a></li>
+											<li><a href="#">Nullam scelerisque blandit leo</a></li> -->
 										</ul>
 									</section>
 
@@ -242,13 +251,13 @@
 
 								<!-- Links -->
 									<section class="widget links">
-										<h3>Random Stuff</h3>
+										<h3>Información</h3>
 										<ul class="style2">
-											<li><a href="#">Etiam feugiat condimentum</a></li>
-											<li><a href="#">Aliquam imperdiet suscipit odio</a></li>
-											<li><a href="#">Sed porttitor cras in erat nec</a></li>
-											<li><a href="#">Felis varius pellentesque potenti</a></li>
-											<li><a href="#">Nullam scelerisque blandit leo</a></li>
+											<li><a href="#">Sobre Veuriel</a></li>
+											<li><a href="#">Beneficios de la terapia</a></li>
+											<li><a href="#">Preparar tu sesión</a></li>
+											<!-- <li><a href="#">Felis varius pellentesque potenti</a></li>
+											<li><a href="#">Nullam scelerisque blandit leo</a></li> -->
 										</ul>
 									</section>
 
@@ -262,7 +271,7 @@
 											<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
 											<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 											<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-											<!-- <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li> -->
+											<!-- <li><a href="#" class="icon brands fa-dribbble"><span class="label">Ubicación</span></a></li> -->
 											<!-- <li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li> -->
 										</ul>
 										<p>Lavalle 1000, Los Reartes<br />
@@ -276,7 +285,10 @@
 							<div class="col-12">
 								<div id="copyright">
 									<ul class="menu">
-  										<li>&copy; Veuriel. Todos los derechos reservados | Design: <a href="http://html5up.net">HTML5 UP</a></li>
+  										<li>&copy; Veuriel. Todos los derechos reservados <span class="separador">|</span> 
+										<span class="design">Diseño: Medusa Desarrollos</span>
+										<span class="separador">|</span> 
+										<span class="design">Template: <a href="http://html5up.net">HTML5 UP</a></span></li>
 									</ul>
 								</div>
 							</div>

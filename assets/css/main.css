@@ -2714,6 +2714,10 @@ input, select, textarea {
   opacity: 0.9;
 }
 
+#btnreserva-1 {
+	padding-right: 2.2em;
+}
+
 .button:hover {
   transform: translateY(-2px);
   transition: 0.2s ease;
@@ -2735,6 +2739,17 @@ input, select, textarea {
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
   }
 
+}
+
+.foto-terapeuta {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.terapeuta img {
+  width: 180px;
+  border-radius: 50%;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
 #experiencias {
@@ -2767,8 +2782,8 @@ input, select, textarea {
 }
 
 .experiencia img {
-	width: 70px;
-  	height: 70px;
+	width: 110px;
+  	height: 110px;
   	border-radius: 50%;
   	object-fit: cover;
   	margin-bottom: 1rem;
@@ -2901,6 +2916,19 @@ input, select, textarea {
   #footer-wrapper {
     text-align: center;
   }
+}
+
+@media (max-width: 736px) {
+
+  #copyright .menu li span.separador {
+    display: none;
+  }
+
+  #copyright .menu li .design {
+    display: block;
+    margin-top: 0.2rem;
+  }
+
 }
 
 @media (max-width: 480px) {
