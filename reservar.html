@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reservas - Veuriel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body class="is-preload homepage">
+
+  <!-- Aquí cargamos el menú -->
+    <div id="header-wrapper">
+        <div id="menu-container"></div>
+    </div>
+
+  <!-- Contenido único de la página -->
+
+  <section id="reservar" class="wrapper style2">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-12">
+
+          <section class="box">
+
+            <header>
+              <h2>Reservá tu turno</h2>
+              <p>Elegí la terapia que te gustaría realizar:</p>
+            </header>
+
+            <div class="terapias-grid">
+
+              <div class="terapia">
+                <h3>Terapia con Ángeles</h3>
+                <div class="terapia-img">
+                  <img src="images/angeles.jpg" alt="Terapia de Ángeles">
+                </div>
+                <p>Sesión de conexión y armonización energética.</p>
+
+                <a href="https://wa.me/5491136757276?text=Hola,%20estoy%20interesado%20en%20la%20Terapia%20con%20Ángeles"
+                  id="reserva-wsp" class="button icon solid fa-arrow-circle-right">
+                  Reservar por WhatsApp
+                </a>
+              </div>
+
+              <div class="terapia">
+                <h3>Constelaciones Familiares</h3>
+                <div class="terapia-img">
+                  <img src="images/constelaciones.jpg" alt="Terapia de Ángeles">
+                </div>
+                <p>Trabajo profundo sobre dinámicas familiares.</p>
+
+                <a href="https://wa.me/5491136757276?text=Hola,%20me%20interesa%20la%20Constelación%20Familiar"
+                  id="reserva-wsp" class="button icon solid fa-arrow-circle-right">
+                  Reservar por WhatsApp
+                </a>
+              </div>
+
+              <div class="terapia">
+                <h3>Limpieza Energética</h3>
+                <div class="terapia-img">
+                  <img src="images/limpieza.jpg" alt="Terapia de Ángeles">
+                </div>
+                <p>Armonización y liberación de bloqueos energéticos.</p>
+
+                <a href="https://wa.me/5491136757276?text=Hola,%20quiero%20consultar%20por%20la%20Limpieza%20Energética"
+                  id="reserva-wsp" class="button icon solid fa-arrow-circle-right">
+                  Reservar por WhatsApp
+                </a>
+              </div>
+
+            </div>
+
+  </div>
+  </section>
+
+
+
+  <!-- Espacio antes del footer -->
+  <div id="div-html-base" style="height:50px;">
+  </div>
+
+    <!-- Aquí cargamos el footer -->
+      <div id="footer-wrapper">   
+          <div id="footer-container"></div>
+      </div>
+
+    <script>
+      // Cargar menú
+      fetch('menu.html')
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById('menu-container').innerHTML = data;
+        });
+
+      // Cargar footer
+      fetch('footer.html')
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById('footer-container').innerHTML = data;
+        });
+    </script>
+
+    <!-- Scripts -->
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+
+    <script>
+      $(function () {
+        $("#menu-container").load("header.html", function () {
+
+          // scripts del template
+          $.getScript("assets/js/jquery.dropotron.min.js");
+          $.getScript("assets/js/browser.min.js");
+          $.getScript("assets/js/breakpoints.min.js");
+          $.getScript("assets/js/util.js");
+          $.getScript("assets/js/main.js");
+
+        });
+      });
+    </script>
+
+
+</body>
+</html>

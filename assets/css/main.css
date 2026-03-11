@@ -2951,6 +2951,13 @@ input, select, textarea {
 
 }
 
+/* Ocultar el div en pantallas pequeñas (mobile y tablet) */
+@media screen and (max-width: 992px) {
+  #div-html-base {
+    display: none !important;
+  }
+}
+
 /* Sobre Veuriel pagina */
 
 .foto-terapeuta {
@@ -2970,10 +2977,40 @@ input, select, textarea {
   margin-bottom: 15px;
 }
 
-@media (max-width: 980px) {
+/* RESERVAR PAGINA */
 
-  section#sobre-veuriel + div {
-    display: none;
-  }
-
+.terapias-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:40px;
 }
+
+.terapia{
+background:#fff;
+padding:30px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.terapia-img {
+  text-align: center;
+  margin: 1rem 0; /* espacio arriba y abajo de la imagen */
+}
+
+.terapia-img img {
+  width: 100%;       /* ocupa todo el contenedor */
+  max-width: 500px;  /* no se haga gigante en desktop */
+  height: auto;      /* mantiene proporción */
+  display: block;
+  margin: 1rem auto;
+  border-radius: 12px; /* centrado */
+}
+
+#reserva-wsp {
+	padding: 0.7em 1.2em;
+	font-size: 1rem;
+}
+
+
