@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sobre Veuriel - Veuriel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body class="is-preload homepage">
+
+  <!-- Aquí cargamos el menú -->
+    <div id="header-wrapper">
+        <div id="menu-container"></div>
+    </div>
+
+  <!-- Contenido único de la página -->
+
+  <section id="sobre-veuriel" class="wrapper style2">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-12">
+
+          <section class="box">
+
+            <header>
+              <h2>Sobre Veuriel</h2>
+            </header>
+
+            <div class="foto-terapeuta">
+              <img src="images/terapeuta.jpg" alt="Terapeuta de Veuriel">
+            </div>
+
+            <p>
+              Vero, creadora de Veuriel y Centro Lumar, espacios dedicados a la sanación, la armonización energética y el despertar de la conciencia.
+            </p>
+
+            <h3>Mi camino</h3>
+            <p>
+              Mi camino comenzó desde una profunda búsqueda personal y espiritual que, con los años, me llevó a formarme y a integrar distintas herramientas de acompañamiento y transformación. Trabajo conectando la dimensión energética, emocional y espiritual de las personas para ayudar a liberar bloqueos, ordenar la energía y abrir nuevos caminos en la vida.
+            </p>
+
+            <h3>Herramientas de acompañamiento</h3>
+            <p>
+              Acompaño procesos a través de la angelología y la conexión con los Ángeles, las constelaciones familiares, el Feng Shui, la limpieza energética y distintas prácticas espirituales que facilitan la sanación profunda.
+
+              También me formé como coach, lo que me permite ayudar a las personas a llevar la comprensión y la sanación a la acción concreta en su vida cotidiana.
+            </p>
+
+            <h3>Retiros y espacios de encuentro</h3>
+            <p>
+              Con el tiempo descubrí que mi forma más auténtica de acompañar se da en espacios cercanos y profundos. Por eso facilito retiros individuales y grupales, donde cada proceso puede ser sostenido con presencia, respeto y dedicación.
+            </p>
+
+            <h3>Constelaciones con caballos</h3>
+            <p>
+              Dentro de estos encuentros también acompaño constelaciones con caballos, una experiencia de sanación muy profunda donde los animales participan desde su sensibilidad y sabiduría natural.
+
+              A través de ellos se revelan dinámicas familiares y emocionales, permitiendo movimientos de sanación y reconciliación interior.
+            </p>
+
+            <h3>Naturaleza y sensibilidad</h3>
+            <p>
+              Hoy siento que mi camino también me llevó a una conexión muy amorosa con los animales y la naturaleza, reconociendo en ellos una guía silenciosa que ayuda a las personas a reconectar con su esencia.
+
+              Mi energía canceriana me lleva naturalmente a crear espacios de contención, sensibilidad y acompañamiento sincero, donde cada persona pueda sentirse sostenida mientras atraviesa su propio proceso de transformación.
+            </p>
+
+            <h3>Veuriel y Lumar</h3>
+            <p>
+              A través de Veuriel y Lumar comparto talleres, formaciones, retiros y procesos de acompañamiento para quienes sienten el llamado.
+            </p>
+
+            <div class="cta-experiencias">
+              <a href="#" class="button icon solid fa-arrow-circle-right">
+                Reservá tu turno
+              </a>
+            </div>
+
+          </section>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- Espacio antes del footer -->
+  <div style="height:50px;">
+  </div>
+
+    <!-- Aquí cargamos el footer -->
+      <div id="footer-wrapper">   
+          <div id="footer-container"></div>
+      </div>
+
+    <script>
+      // Cargar menú
+      fetch('menu.html')
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById('menu-container').innerHTML = data;
+        });
+
+      // Cargar footer
+      fetch('footer.html')
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById('footer-container').innerHTML = data;
+        });
+    </script>
+
+    <!-- Scripts -->
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+
+    <script>
+      $(function () {
+        $("#menu-container").load("header.html", function () {
+
+          // scripts del template
+          $.getScript("assets/js/jquery.dropotron.min.js");
+          $.getScript("assets/js/browser.min.js");
+          $.getScript("assets/js/breakpoints.min.js");
+          $.getScript("assets/js/util.js");
+          $.getScript("assets/js/main.js");
+
+        });
+      });
+    </script>
+
+
+</body>
+</html>
