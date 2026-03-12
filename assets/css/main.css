@@ -3094,3 +3094,17 @@ margin-top:40px;
     height:150px;
   }
 }
+
+.img-medio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* igual que el mapa */
+  margin-top: 20px;
+}
+
+.img-medio video {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
