@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto - Veuriel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body class="is-preload homepage">
+
+  <!-- Aquí cargamos el menú -->
+    <div id="header-wrapper">
+        <div id="menu-container"></div>
+    </div>
+
+  <!-- Contenido único de la página -->
+
+<section id="contacto" class="wrapper style2">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+
+        <!-- Este es el recuadro blanco grande -->
+        <section class="box">
+
+          <header>
+            <h2>Contacto</h2>
+            <p>Si sentís el llamado a iniciar un proceso o querés recibir más información, podés comunicarte por cualquiera de estos medios.</p>
+          </header>
+
+          <div class="contacto-grid">
+
+            <div class="contacto-item">
+              <h3>WhatsApp</h3>
+              <p>Podés escribirnos directamente para consultar o reservar tu turno.</p>
+              <a href="https://wa.me/5491136757276" class="button" target="_blank">
+                Escribir por WhatsApp
+              </a>
+            </div>
+
+            <div class="contacto-item">
+              <h3>Instagram</h3>
+              <p>Seguinos para conocer talleres, retiros y actividades.</p>
+              <a href="https://instagram.com/" class="button" target="_blank">
+                Ver Instagram
+              </a>
+            </div>
+
+            <div class="contacto-item">
+              <h3>Ubicación</h3>
+              <p>El espacio se encuentra en un entorno pensado para el encuentro, la sanación y la conexión con la naturaleza.</p>
+              <div class="mapa-wrapper">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3387.0553273777505!2d-64.5746588237447!3d-31.905094074040186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2b2349db5e1c3%3A0x4745481e2192fa7d!2sLavalle%201000%2C%20Los%20Reartes%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1773353866480!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+
+          </div>
+
+          <div style="text-align:center; margin-top:40px;">
+            <a href="https://wa.me/5491136757276?text=Hola,%20quisiera%20hacer%20una%20consulta"
+               class="button large"
+               target="_blank">
+               Hacer una consulta
+            </a>
+          </div>
+
+        </section> <!-- FIN BOX -->
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Espacio antes del footer -->
+  <div style="height:50px;" id="div-html-base">
+  </div>
+
+    <!-- Aquí cargamos el footer -->
+      <div id="footer-wrapper">   
+          <div id="footer-container"></div>
+      </div>
+
+    <script>
+      // Cargar menú
+      fetch('menu.html')
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById('menu-container').innerHTML = data;
+        });
+
+      // Cargar footer
+      fetch('footer.html')
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById('footer-container').innerHTML = data;
+        });
+    </script>
+
+    <!-- Scripts -->
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+
+    <script>
+      $(function () {
+        $("#menu-container").load("header.html", function () {
+
+          // scripts del template
+          $.getScript("assets/js/jquery.dropotron.min.js");
+          $.getScript("assets/js/browser.min.js");
+          $.getScript("assets/js/breakpoints.min.js");
+          $.getScript("assets/js/util.js");
+          $.getScript("assets/js/main.js");
+
+        });
+      });
+    </script>
+
+
+</body>
+</html>
