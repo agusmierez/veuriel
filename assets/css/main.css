@@ -3076,6 +3076,10 @@ margin-top:40px;
   margin-bottom:10px;
 }
 
+/* .contacto-item p{
+  margin-bottom: 0.5px;
+} */
+
 @media screen and (max-width: 768px){
 
 .contacto-grid{
@@ -3101,12 +3105,16 @@ margin-top:40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px; /* igual que el mapa */
-  margin-top: 20px;
+  min-height: 200px; /* igual que el mapa */
+  margin-top: -50px;
+  width: 100%;
 }
 
 .img-medio video {
-  max-height: 100%;
-  max-width: 100%;
-  object-fit: contain;
+  max-width:160px;
+  transition: transform 0.3s ease;
+}
+
+.contacto-item:hover video{
+  transform: scale(1.08);
 }
