@@ -3056,10 +3056,11 @@ margin-top:40px;
 /* CONTACTO PAGINA */
 
 .contacto-grid{
-  display:grid;
+  display:flex;
   grid-template-columns: repeat(3,1fr);
   gap:30px;
   margin-top:40px;
+  flex-wrap: wrap;
 }
 
 .contacto-item{
@@ -3068,6 +3069,7 @@ margin-top:40px;
   border-radius:12px;
   text-align:center;
   box-shadow:0 5px 20px rgba(0,0,0,0.05);
+  flex: 1 1 300px;
 }
 
 .contacto-item h3{
@@ -3090,7 +3092,7 @@ margin-top:40px;
 }
 
 @media screen and (max-width:768px){
-  .mapa-wrapper iframe {
+  .img-medio .mapa-wrapper iframe {
     height:150px;
   }
 }
