@@ -134,6 +134,25 @@
       });
 
     </script>
+    <script>
+      setTimeout(() => {
+
+        const cards = document.querySelectorAll(".terapia");
+
+        cards.forEach((card, i) => {
+          setTimeout(() => {
+            card.classList.add("visible");
+          }, i * 150);
+        });
+
+      }, 100);
+    </script>
+
+    <a href="https://wa.me/5491136757276"
+      class="whatsapp-float"
+      target="_blank">
+      💬
+    </a>
 
 
 </body>
