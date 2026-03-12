@@ -31,57 +31,21 @@
               <p>Elegí la terapia que te gustaría realizar:</p>
             </header>
 
-            <div class="terapias-grid">
+            <div class="terapias-grid" id="lista-terapias"></div>
 
-              <div class="terapia">
-                <h3>Terapia con Ángeles</h3>
-                <div class="terapia-img">
-                  <img src="images/angeles.jpg" alt="Terapia de Ángeles">
-                </div>
-                <p>Sesión de conexión y armonización energética.</p>
+            <div class="terapias-grid" id="lista-terapias"></div>
 
-                <a href="https://wa.me/5491136757276?text=Hola,%20estoy%20interesado%20en%20la%20Terapia%20con%20Ángeles"
-                  id="reserva-wsp" class="button icon solid fa-arrow-circle-right">
-                  Reservar por WhatsApp
-                </a>
-              </div>
-
-              <div class="terapia">
-                <h3>Constelaciones Familiares</h3>
-                <div class="terapia-img">
-                  <img src="images/constelaciones.jpg" alt="Terapia de Ángeles">
-                </div>
-                <p>Trabajo profundo sobre dinámicas familiares.</p>
-
-                <a href="https://wa.me/5491136757276?text=Hola,%20me%20interesa%20la%20Constelación%20Familiar"
-                  id="reserva-wsp" class="button icon solid fa-arrow-circle-right">
-                  Reservar por WhatsApp
-                </a>
-              </div>
-
-              <div class="terapia">
-                <h3>Limpieza Energética</h3>
-                <div class="terapia-img">
-                  <img src="images/limpieza.jpg" alt="Terapia de Ángeles">
-                </div>
-                <p>Armonización y liberación de bloqueos energéticos.</p>
-
-                <a href="https://wa.me/5491136757276?text=Hola,%20quiero%20consultar%20por%20la%20Limpieza%20Energética"
-                  id="reserva-wsp" class="button icon solid fa-arrow-circle-right">
-                  Reservar por WhatsApp
-                </a>
-              </div>
-
-            </div>
-
-  </div>
+            <div class="terapias-grid" id="lista-terapias"></div>
+          </section>
+        </div>    
+      </div>
+    </div>
   </section>
 
 
 
   <!-- Espacio antes del footer -->
-  <div id="div-html-base" style="height:50px;">
-  </div>
+  <div id="div-html-base" style="height:50px;"></div>
 
     <!-- Aquí cargamos el footer -->
       <div id="footer-wrapper">   
@@ -112,8 +76,6 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.min.js"></script>
 
     <script>
       $(function () {
@@ -128,6 +90,49 @@
 
         });
       });
+    </script>
+
+    <!-- Script que genera las terapias -->
+    <script>
+
+      fetch("terapias.json")
+      .then(res => res.json())
+      .then(terapias => {
+
+      const contenedor = document.getElementById("lista-terapias");
+
+      terapias.forEach(t => {
+
+      const mensaje = encodeURIComponent(
+      "Hola, estoy interesado en la terapia de " + t.nombre
+      );
+
+      const html = `
+      <div class="terapia">
+
+      <h3>${t.nombre}</h3>
+
+      <div class="terapia-img">
+      <img src="${t.imagen}" alt="${t.nombre}">
+      </div>
+
+      <p>${t.descripcion}</p>
+
+      <a href="https://wa.me/5491136757276?text=${mensaje}"
+      class="button icon solid fa-arrow-circle-right"
+      target="_blank" id="reserva-wsp">
+      Reservar por WhatsApp
+      </a>
+
+      </div>
+      `;
+
+      contenedor.innerHTML += html;
+
+      });
+
+      });
+
     </script>
 
 

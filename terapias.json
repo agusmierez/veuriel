@@ -1,0 +1,17 @@
+[
+  {
+    "nombre": "Terapia con Ángeles",
+    "imagen": "images/angeles.jpg",
+    "descripcion": "Sesión de conexión y armonización energética."
+  },
+  {
+    "nombre": "Constelaciones Familiares",
+    "imagen": "images/constelaciones.jpg",
+    "descripcion": "Trabajo profundo sobre dinámicas familiares."
+  },
+  {
+    "nombre": "Limpieza Energética",
+    "imagen": "images/limpieza.jpg",
+    "descripcion": "Armonización y liberación de bloqueos energéticos."
+  }
+]
