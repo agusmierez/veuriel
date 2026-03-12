@@ -3118,3 +3118,7 @@ margin-top:40px;
 .contacto-item:hover video{
   transform: scale(1.08);
 }
+
+.icono-ig{
+  transform: scale(1.4);
+}
