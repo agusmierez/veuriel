@@ -3124,9 +3124,14 @@ margin-top:40px;
   transform: scale(1.4);
 }
 
-.contacto-item .button{
-  display: block;
-  width: 100%;
+.contacto-item{
   text-align: center;
+}
+
+.contacto-item .button{
+  display: inline-block;
+  /* width: 100%;
+  text-align: center; */
   white-space: nowrap;
+  /* padding: 0 22px; */
 }
