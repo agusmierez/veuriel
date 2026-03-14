@@ -3214,9 +3214,57 @@ margin-top:40px;
   text-align: center;
 }
 
-/* celular */
+/* tablet */
 @media screen and (max-width:1000px){
   .lumar-btn{
+    width:100%;
+    min-width:0;
+  }
+}
+
+/* AURICOS PAGINA */
+
+.auricos-img img{
+  max-width: 700px;
+  margin: 0 auto;
+  display: block;
+}
+
+.auricos-btn {
+	display: block;
+  width: fit-content;
+  min-width: 220px;
+  margin: 30px auto 0;
+  text-align: center;
+}
+
+/* tablet */
+@media screen and (max-width:1000px){
+  .auricos-btn{
+    width:100%;
+    min-width:0;
+  }
+}
+
+/* TAROT PAGINA */
+
+.tarot-img img{
+  max-width: 700px;
+  margin: 0 auto;
+  display: block;
+}
+
+.tarot-btn {
+	display: block;
+  width: fit-content;
+  min-width: 220px;
+  margin: 30px auto 0;
+  text-align: center;
+}
+
+/* tablet */
+@media screen and (max-width:1000px){
+  .tarot-btn{
     width:100%;
     min-width:0;
   }
