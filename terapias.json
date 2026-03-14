@@ -1,6 +1,6 @@
 [
   {
-    "nombre": "Terapia con Ángeles",
+    "nombre": "Tarot Angelical",
     "imagen": "images/angeles.jpg",
     "descripcion": "Sesión de conexión y armonización energética."
   },
@@ -13,5 +13,31 @@
     "nombre": "Limpieza Energética",
     "imagen": "images/limpieza.jpg",
     "descripcion": "Armonización y liberación de bloqueos energéticos."
+  },
+  {
+    "nombre": "Formación de Sacerdotisas",
+    "imagen": "images/sacerdotisas.jpg",
+    "descripcion": "Formación espiritual para desarrollar intuición y conexión con lo sagrado."
+  },
+  {
+    "nombre": "Conexión Estelar",
+    "imagen": "images/conexion.jpg",
+    "descripcion": "Apertura a la guía estelar y expansión de la conciencia."
+  },
+  {
+    "nombre": "Memoria Celular",
+    "imagen": "images/memoria.jpg",
+    "descripcion": "Sanación de memorias celulares y desbloqueo energético."
+  },
+  {
+    "nombre": "Masajes Ayurvédicos",
+    "imagen": "images/masajes.jpg",
+    "descripcion": "Masajes ayurvédicos para relajación y equilibrio integral."
+  },
+  {
+    "nombre": "Llave Mariana",
+    "imagen": "images/llave.jpg",
+    "descripcion": "Armonización y liberación de bloqueos energéticos."
   }
+  
 ]
