@@ -3153,53 +3153,94 @@ justify-content: center;
 
 /* RETIROS PAGINAS */
 
-.retiros-grid {
-  display: flex!important;
-  grid-template-columns: 1fr 1fr !important;
-  gap: 2rem;
-  width: 100%;
-  flex-wrap: wrap;
+/* ========================= */
+/* RETIROS - SECCIÓN GRID    */
+/* ========================= */
+
+#retiros .container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  overflow-x: hidden;
 }
 
-.inner {
-  width: 100%;
+.retiros-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
+
+@media (max-width: 768px) {
+  .retiros-grid {
+    display: block;
+  }
+}
+
+/* La tercera card ocupa todo el ancho en desktop */
+.retiros-grid .retiro-card:nth-child(3) {
+  grid-column: span 2;
+}
+
+/* ========================= */
+/* CARD                      */
+/* ========================= */
 
 .retiro-card {
-  flex: 1 1 320px;
   background: #fff;
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.05);
   text-align: center;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   align-items: center;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .retiro-card:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
   box-shadow: 0 10px 30px rgba(0,0,0,0.12);
 }
 
+/* ========================= */
+/* IMAGEN                    */
+/* ========================= */
+
 .card-img {
   width: 100%;
-  height: 180px;       /* altura pareja */
-  object-fit: cover;   /* recorta sin deformar */
+  height: 180px;        /* altura pareja */
+  object-fit: cover;    /* recorta sin deformar */
   border-radius: 10px;
   margin-bottom: 20px;
 }
 
-.retiro-card p {
-  margin: 15px 0 25px 0;
+/* Desktop un poco más grande */
+@media (min-width: 992px) {
+  .card-img {
+    height: 220px;
+  }
 }
 
+/* ========================= */
+/* MOBILE                    */
+/* ========================= */
+
 @media (max-width: 768px) {
+
   .retiros-grid {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
+
+  .retiros-grid .retiro-card {
+    grid-column: auto;
+  }
+
 }
 
 /* CENTRO LUMAR PAGINA */
