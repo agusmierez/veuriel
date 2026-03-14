@@ -2732,6 +2732,12 @@ input, select, textarea {
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
+.landing-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
 @media (hover: hover) {
 
   .servicio:hover {
@@ -3189,5 +3195,29 @@ margin-top:40px;
 @media (max-width: 768px) {
   .retiros-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* CENTRO LUMAR PAGINA */
+
+.lumar-img img{
+  max-width: 700px;
+  margin: 0 auto;
+  display: block;
+}
+
+.lumar-btn{
+  display: block;
+  width: fit-content;
+  min-width: 220px;
+  margin: 30px auto 0;
+  text-align: center;
+}
+
+/* celular */
+@media screen and (max-width:1000px){
+  .lumar-btn{
+    width:100%;
+    min-width:0;
   }
 }

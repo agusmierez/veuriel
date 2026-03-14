@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Aúricos - Veuriel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body class="is-preload homepage">
+
+  <!-- Aquí cargamos el menú -->
+    <div id="header-wrapper">
+        <div id="menu-container"></div>
+    </div>
+
+  <!-- Contenido único de la página -->
+
+  <section id="pagina-base" class="wrapper style2">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-12">
+
+          <section class="box">
+
+            <header>
+              <h2>Auricos</h2>
+              <p>
+                En Auricos podés encontrar distintos elementos pensados para acompañar
+                procesos de sanación, meditación y trabajo espiritual.
+              </p>
+            </header>
+
+            <span class="image featured">
+              <img src="images/auricos.jpg" alt="Productos Auricos">
+            </span>
+
+            <p>
+              Trabajamos con productos seleccionados para acompañar terapias,
+              rituales y prácticas energéticas. Podés consultar disponibilidad
+              o recibir asesoramiento personalizado.
+            </p>
+
+            <a href="https://wa.me/5491136757276?text=Hola! Quiero consultar por productos de Auricos"
+              class="button primary auricos-btn"
+              target="_blank">
+              Consultar productos
+            </a>
+
+          </section>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- Espacio antes del footer -->
+  <div style="height:50px;" id="div-html-base">
+  </div>
+
+    <!-- Aquí cargamos el footer -->
+      <div id="footer-wrapper">   
+          <div id="footer-container"></div>
+      </div>
+
+    <script>
+      // Cargar menú
+      fetch('menu.html')
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById('menu-container').innerHTML = data;
+        });
+
+      // Cargar footer
+      fetch('footer.html')
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById('footer-container').innerHTML = data;
+        });
+    </script>
+
+    <!-- Scripts -->
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+
+    <script>
+      $(function () {
+        $("#menu-container").load("header.html", function () {
+
+          // scripts del template
+          $.getScript("assets/js/jquery.dropotron.min.js");
+          $.getScript("assets/js/browser.min.js");
+          $.getScript("assets/js/breakpoints.min.js");
+          $.getScript("assets/js/util.js");
+          $.getScript("assets/js/main.js");
+
+        });
+      });
+    </script>
+
+
+</body>
+</html>
