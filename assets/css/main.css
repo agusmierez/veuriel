@@ -3065,11 +3065,10 @@ justify-content: center;
 /* CONTACTO PAGINA */
 
 .contacto-grid{
-  display:flex;
-  grid-template-columns: repeat(3,1fr);
-  gap:30px;
-  margin-top:40px;
+  display: flex;
   flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
 }
 
 .contacto-item{
@@ -3078,35 +3077,29 @@ justify-content: center;
   border-radius:12px;
   text-align:center;
   box-shadow:0 5px 20px rgba(0,0,0,0.05);
-  flex: 1 1 300px;
+  flex: 1 1 300px; /* base de 300px y crece si hay espacio */
 }
 
-.contacto-item h3{
-  margin-bottom:10px;
+.mapa-item{
+  flex: 1 1 100%; /* ocupa todo el ancho en desktop */
 }
-
-/* .contacto-item p{
-  margin-bottom: 0.5px;
-} */
 
 @media screen and (max-width: 768px){
-
-.contacto-grid{
-  grid-template-columns:1fr;
+  .contacto-item{
+    flex: 1 1 100%; /* todos ocupan todo el ancho en tablet/móvil */
+  }
 }
 
-}
-
-.mapa-wrapper iframe {
+.mapa-wrapper iframe{
   width: 100%;
   height: 200px;
-  border-radius:12px;
-  border:0;
+  border-radius: 12px;
+  border: 0;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width: 768px){
   .img-medio .mapa-wrapper iframe {
-    height:150px;
+    height: 150px;
   }
 }
 
@@ -3114,41 +3107,51 @@ justify-content: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 200px; /* igual que el mapa */
+  min-height: 200px;
   margin-top: -30px;
   margin-bottom: 30px;
   width: 100%;
 }
 
+/* Videos */
 .img-medio video {
-  max-width:160px;
+  max-width: 160px;
   transition: transform 0.3s ease;
+  transform: scale(1); /* tamaño base normal */
 }
 
-.contacto-item:hover video{
-  transform: scale(1.08);
+/* WhatsApp tamaño normal */
+.contacto-item.whatsapp .img-medio video {
+  transform: scale(1);
 }
 
-.icono-ig{
-  transform: scale(1.4);
+/* IG y TikTok un poco más grandes de base */
+.contacto-item.instagram .img-medio video,
+.contacto-item.tiktok .img-medio video {
+  transform: scale(1.2);
 }
 
-.contacto-item{
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* Quitar hover sobre videos */
+.img-medio video:hover {
+  transform: none;
 }
 
+/* Evitar que mapa y botón grande escalen con hover */
+.contacto-item.mapa-item,
+#div-html-base {
+  transform: none !important;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05) !important;
+}
+
+/* Hover del item completo, no del video */
 .contacto-item:hover {
   transform: translateY(-4px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
-.contacto-item .button{
-  display: inline-block;
-  /* width: 100%;
-  text-align: center; */
-  white-space: nowrap;
-  /* padding: 0 22px; */
+/* Escalar solo iframe/video dentro de img-medio si es necesario (opcional) */
+.contacto-item:hover .img-medio iframe {
+  transform: scale(1.08);
 }
 
 /* RETIROS PAGINAS */
